@@ -26,6 +26,9 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
+  // Optimizes the site during development to be deployed statically
+  target: "static",
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
