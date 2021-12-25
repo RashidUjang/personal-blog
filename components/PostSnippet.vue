@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="post-snippet">
     <NuxtLink :to="path">
       <h2 class="title is-2">{{ title }}</h2>
     </NuxtLink>
@@ -42,7 +42,7 @@ export default {
   margin-top: 24px;
 }
 
-div {
+.post-snippet {
   margin-top: 80px;
 }
 

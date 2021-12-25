@@ -23,6 +23,11 @@ export default {
     },
   },
   props: ["postName"],
+  head() {
+    return {
+      title: this.post.title + " | Adam Rashid",
+    };
+  },
 };
 </script>
 
@@ -85,14 +90,14 @@ export default {
 .nuxt-content h2 {
   color: #221284;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 16px;
 }
 
 .nuxt-content h3 {
   color: #221284;
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 12px;
 }
 

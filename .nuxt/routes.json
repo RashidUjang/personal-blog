@@ -1,30 +1,32 @@
 [
   {
+    "name": "404",
+    "path": "/404",
+    "component": "/home/adam/repositories/personal-blog/pages/404.vue",
+    "chunkName": "pages/404"
+  },
+  {
     "name": "about",
     "path": "/about",
     "component": "/home/adam/repositories/personal-blog/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_3527277c"
+    "chunkName": "pages/about"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "/home/adam/repositories/personal-blog/pages/projects.vue",
-    "chunkName": "pages/projects",
-    "_name": "_97eb0a4a"
+    "chunkName": "pages/projects"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/adam/repositories/personal-blog/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_54df0241"
+    "chunkName": "pages/index"
   },
   {
     "name": "posts",
     "path": "/posts/:postName",
     "component": "/home/adam/repositories/personal-blog/pages/-post.vue",
-    "props": true,
-    "_name": "_7bb14388"
+    "props": true
   }
 ]

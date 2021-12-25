@@ -2,7 +2,7 @@
 // @import "~bulma/sass/utilities/functions";
 // @import "~bulma/sass/utilities/mixins";
 // @import '~bulma/sass/utilities/derived-variables';
-@import '~bulma/sass/utilities/_all';
+@import "~bulma/sass/utilities/_all";
 
 $body-background-color: #fff5ed;
 $mobile: 624px;
@@ -49,7 +49,7 @@ a > svg {
   }
 }
 
-.socials {
+.name-socials .socials {
   @include until($mobile) {
     margin-left: 0px;
   }
@@ -79,15 +79,82 @@ a > svg {
   margin-right: 24px;
 }
 
-@import '~bulma/sass/base/_all';
-@import '~bulma/sass/components/_all';
-@import '~bulma/sass/elements/box';
-@import '~bulma/sass/elements/button';
-@import '~bulma/sass/elements/container';
-@import '~bulma/sass/elements/content';
-@import '~bulma/sass/elements/icon';
-@import '~bulma/sass/elements/image';
-@import '~bulma/sass/elements/title';
-@import '~bulma/sass/form/_all';
-@import '~bulma/sass/grid/_all';
-@import '~bulma/sass/helpers/typography';
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+}
+
+$family-primary: "Ubuntu", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-secondary: "Ubuntu", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/components/_all";
+@import "~bulma/sass/elements/box";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/icon";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/form/_all";
+@import "~bulma/sass/grid/_all";
+@import "~bulma/sass/helpers/typography";

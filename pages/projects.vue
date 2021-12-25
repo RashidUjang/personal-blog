@@ -8,7 +8,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      title: "Projects | Adam Rashid",
+    };
+  },
+};
 </script>
 
 <style scoped>

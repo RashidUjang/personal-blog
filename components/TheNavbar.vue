@@ -65,14 +65,22 @@ export default {
 }
 
 /* Max width is $tablet - 1 */
+/* This determines the look of .navbar-item in the mobile dropdown menu by removing some styling and making the colour uniform*/
 @media screen and (max-width: 1023px) {
   .navbar-end .navbar-item {
     color: #221284;
     padding: 12px 24px;
+    text-decoration: none;
   }
 
-  .navbar-end .navbar-item:active, .navbar-end .navbar-item:hover {
-    background-color: #dedee9;  }
+  .navbar-end .navbar-item:active,
+  .navbar-end .navbar-item:hover {
+    background-color: #dedee9;
+  }
+
+  .navbar-menu {
+    border-radius: 6px;
+  }
 }
 
 .navbar-item:hover,
@@ -89,5 +97,7 @@ nav {
 
 a.nuxt-link-exact-active {
   color: #221284;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 </style>

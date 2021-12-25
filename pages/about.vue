@@ -20,6 +20,11 @@ export default {
   methods: {
     ...mapGetters(["getAbout"]),
   },
+  head() {
+    return {
+      title: "About | Adam Rashid",
+    };
+  },
 };
 </script>
 
