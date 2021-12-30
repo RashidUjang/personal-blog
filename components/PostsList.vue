@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PostSnippet v-for="post in posts" :key="post.title" :title="post.title" :excerpt="post.excerpt" :createdAt="post.createdAt" :path="post.path"></PostSnippet>
+    <PostSnippet v-for="post in posts" :key="post.title" :title="post.title" :excerpt="post.excerpt" :createdAt="post.createdAt" :path="post.path">{{post.path}}</PostSnippet>
   </div>
 </template>
 
@@ -15,7 +15,6 @@ export default {
   },
   async mounted() {
     this.posts = this.getPosts();
-    console.log(this.posts);
   },
   methods: {
     ...mapGetters("posts", ["getPosts"]),

@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "static-dev": "nuxt generate && nuxt start"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.0",
@@ -22,9 +22,6 @@
   },
   "devDependencies": {
     "@vue/test-utils": "^1.2.1",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^27.0.5",
-    "jest": "^27.0.5",
-    "vue-jest": "^3.0.4"
+    "babel-core": "7.0.0-bridge.0"
   }
 }

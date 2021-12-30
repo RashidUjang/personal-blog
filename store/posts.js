@@ -1,6 +1,5 @@
 export const state = () => ({
   posts: [],
-  projects: []
 });
 
 export const getters = {

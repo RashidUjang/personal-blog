@@ -1,13 +1,13 @@
-export const Bulma = () => import('../../components/Bulma.vue' /* webpackChunkName: "components/bulma" */).then(c => wrapFunctional(c.default || c))
-export const Button = () => import('../../components/Button.vue' /* webpackChunkName: "components/button" */).then(c => wrapFunctional(c.default || c))
-export const HeroIntroduction = () => import('../../components/HeroIntroduction.vue' /* webpackChunkName: "components/hero-introduction" */).then(c => wrapFunctional(c.default || c))
-export const PostSnippet = () => import('../../components/PostSnippet.vue' /* webpackChunkName: "components/post-snippet" */).then(c => wrapFunctional(c.default || c))
-export const PostsList = () => import('../../components/PostsList.vue' /* webpackChunkName: "components/posts-list" */).then(c => wrapFunctional(c.default || c))
-export const SocialLinksSmall = () => import('../../components/SocialLinksSmall.vue' /* webpackChunkName: "components/social-links-small" */).then(c => wrapFunctional(c.default || c))
-export const TheFooter = () => import('../../components/TheFooter.vue' /* webpackChunkName: "components/the-footer" */).then(c => wrapFunctional(c.default || c))
-export const TheNavbar = () => import('../../components/TheNavbar.vue' /* webpackChunkName: "components/the-navbar" */).then(c => wrapFunctional(c.default || c))
-export const Tile = () => import('../../components/Tile.vue' /* webpackChunkName: "components/tile" */).then(c => wrapFunctional(c.default || c))
-export const TileContainer = () => import('../../components/TileContainer.vue' /* webpackChunkName: "components/tile-container" */).then(c => wrapFunctional(c.default || c))
+export { default as Bulma } from '../../components/Bulma.vue'
+export { default as Button } from '../../components/Button.vue'
+export { default as HeroIntroduction } from '../../components/HeroIntroduction.vue'
+export { default as PostSnippet } from '../../components/PostSnippet.vue'
+export { default as PostsList } from '../../components/PostsList.vue'
+export { default as SocialLinksSmall } from '../../components/SocialLinksSmall.vue'
+export { default as TheFooter } from '../../components/TheFooter.vue'
+export { default as TheNavbar } from '../../components/TheNavbar.vue'
+export { default as Tile } from '../../components/Tile.vue'
+export { default as TileContainer } from '../../components/TileContainer.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

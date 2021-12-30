@@ -27,10 +27,10 @@
     >
       <div class="navbar-end">
         <NuxtLink class="navbar-item" to="/"><strong>Blog</strong></NuxtLink>
-        <NuxtLink class="navbar-item" to="/projects"
+        <NuxtLink class="navbar-item" to="/projects/"
           ><strong>Projects</strong></NuxtLink
         >
-        <NuxtLink class="navbar-item" to="/about"
+        <NuxtLink class="navbar-item" to="/about/"
           ><strong>About</strong></NuxtLink
         >
       </div>

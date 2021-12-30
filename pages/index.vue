@@ -19,8 +19,8 @@ export default {
 
 <style>
 /* TODO: Decide if this should be placed in body somehow */
-p {
+/* p {
   font-size: 1.2rem;
   color: #332f2c;
-}
+} */
 </style>

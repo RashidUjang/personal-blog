@@ -38,7 +38,7 @@ export default {
   margin-top: 8px;
 }
 
-.nuxt-content-container {
+.nuxt-content {
   margin-top: 24px;
 }
 

@@ -3,15 +3,15 @@ export default {
   head: {
     title: "client",
     htmlAttrs: {
-      lang: "en"
+      lang: "en",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" }
+      { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -47,22 +47,44 @@ export default {
         name: "posts",
         path: "/posts/:postName",
         component: resolve(__dirname, "pages/-post.vue"),
-        props: true
+        props: true,
       });
-    }
+    },
   },
 
   // Allows the website to be able to be accessed by mobile in development
   server: {
-    host: "0"
+    host: "0",
   },
 
   // Changes the syntax highlighting theme in code blocks by accessing the right theme in the prism-themes module
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-vsc-dark-plus.css'
-      }
-    }
+        theme: "prism-themes/themes/prism-vsc-dark-plus.css",
+      },
+    },
+  },
+
+  // Explicitly defines routes for the generator and fixes the refresh bug
+  generate: {
+    // routes: ["/posts/creating-a-blog-with-nuxt"],
+    // async routes() {
+    //   const { $content } = require("@nuxt/content");
+    //   const files = await $content({ deep: true })
+    //     .only(["path"])
+    //     .fetch();
+    //   console.log(files);
+    // },
+
+    async routes() {
+      const { $content } = require("@nuxt/content");
+      const files = await $content("posts")
+        .only(["path"])
+        .fetch();
+      return files.map((file) => file.path);
+
+      // return ["/posts/creating-a-blog-with-nuxt"];
+    },
   },
 };
