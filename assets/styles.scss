@@ -151,6 +151,19 @@ p {
   color: #332f2c;
 }
 
+ul > li {
+  list-style: disc inside 
+}
+
+ol > li {
+  list-style-position: inside;
+}
+ol > li, ul > li {
+  color: #332f2c;
+  font-size: 1.2rem
+  
+}
+
 @import "~bulma/sass/base/_all";
 @import "~bulma/sass/components/_all";
 @import "~bulma/sass/elements/box";

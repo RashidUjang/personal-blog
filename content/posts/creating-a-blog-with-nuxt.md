@@ -23,11 +23,17 @@ I decided to start this blog by designing it in Figma. I am by no means a design
 Example figure:
 ![alt text](/fig1.png)
 
-Example of a list:
+Example of an unordered list:
 - Nuxt.js
 - Netlify
 - Bulma
 - Sass
+
+Example of an ordered list:
+1. Nuxt.js
+2. Netlify
+3. Bulma
+4. Sass
 
 Some example code:
 ```js{1,3-5}[server.js]
