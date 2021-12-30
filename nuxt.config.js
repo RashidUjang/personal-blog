@@ -43,12 +43,19 @@ export default {
 
   router: {
     extendRoutes(routes, resolve) {
-      routes.push({
-        name: "posts",
-        path: "/posts/:postName",
-        component: resolve(__dirname, "pages/-post.vue"),
-        props: true,
-      });
+      routes.push(
+        {
+          name: "postsList",
+          path: "/posts",
+          redirect: "/"
+        },
+        {
+          name: "posts",
+          path: "/posts/:postName",
+          component: resolve(__dirname, "pages/-post.vue"),
+          props: true,
+        }
+      );
     },
   },
 
@@ -68,23 +75,14 @@ export default {
 
   // Explicitly defines routes for the generator and fixes the refresh bug
   generate: {
-    // routes: ["/posts/creating-a-blog-with-nuxt"],
-    // async routes() {
-    //   const { $content } = require("@nuxt/content");
-    //   const files = await $content({ deep: true })
-    //     .only(["path"])
-    //     .fetch();
-    //   console.log(files);
-    // },
-
     async routes() {
       const { $content } = require("@nuxt/content");
       const files = await $content("posts")
         .only(["path"])
         .fetch();
       return files.map((file) => file.path);
-
-      // return ["/posts/creating-a-blog-with-nuxt"];
     },
+
+    fallback: true,
   },
 };
