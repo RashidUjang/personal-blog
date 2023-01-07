@@ -131,4 +131,12 @@ export default {
 .nuxt-content p + p {
   margin-top: 0.5rem;
 }
+
+.nuxt-content .video-container {
+  text-align: center;
+}
+
+.nuxt-content .video-container video {
+  width: 100%;
+}
 </style>
