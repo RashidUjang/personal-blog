@@ -3,7 +3,6 @@
     <TheNavbar></TheNavbar>
     <HeroIntroduction :description="about[0].description" :title="about[0].title"></HeroIntroduction>
     <NuxtContent :document="about[0]"></NuxtContent>
-    <Button :displayedText="'DOWNLOAD CV'"></Button>
     <TheFooter></TheFooter>
   </div>
 </template>
