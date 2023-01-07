@@ -102,7 +102,7 @@
       </div>
     </div>
     <h1 class="title is-1">
-      Hi, I’m Adam.
+      {{ title }}
       <br />
       {{ description }}
     </h1>
@@ -111,7 +111,7 @@
 
 <script>
 export default {
-  props: ["description"],
+  props: ["description", "title"],
 };
 </script>
 <style scoped>

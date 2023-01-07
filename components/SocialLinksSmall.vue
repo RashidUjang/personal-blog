@@ -106,8 +106,7 @@
         </div>
       </div>
       <p>
-        All things tech interest me. Developer Experience, Requirements,
-        Automation, music, gaming & cooking
+        Software development, engineering management & miscellaneous thoughts. Ever curious.
       </p>
     </div>
   </div>

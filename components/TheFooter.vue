@@ -1,7 +1,7 @@
 <template>
   <div>
     <hr />
-    <p>Copyright © 2021 | Che Adam Rashid</p>
+    <p>Copyright © 2023 | Che Adam Rashid</p>
   </div>
 </template>
 
