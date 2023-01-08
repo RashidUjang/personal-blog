@@ -22,13 +22,13 @@ The truth is actually quite a lot simpler and more elegant than that.
 When observing the glow effect using a [colourful video](https://www.youtube.com/watch?v=xAwB9lQnxAY), it seems that the background only changes between **two** colours:
 
 <div class="video-container">
-  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/ambient-effect-example.webm">Ambient Effect Example</video>
+  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/ambient-effect-example.mp4">Ambient Effect Example</video>
 </div>
 
 By making the video player (`<div id=player-container-outer>`) element transparent with (`opacity: 0`), we can see the ambient mode is simply a kind of blur effect behind the video itself. The actual ambient effect is under the `<div id=cinematics>` container where there are 2 `canvas` elements. By observing the computed properties for each of these in Chrome Devtools, you can see that the opacity changes from 0 to 1, which suggests that the blur effects are “crossfaded” between two states.
 
 <div class="video-container">
-  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/ambient-effect-only.webm">Ambient Effect Only</video>
+  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/ambient-effect-only.mp4">Ambient Effect Only</video>
 </div>
 
 Now the question is, what is getting crossfaded between the two states? To answer this, we can get some clues from Chrome’s Network Tab. We can see that if the ambient mode is turned on, an image is downloaded periodically and follows the naming convention of MX.webp (M0.webp, M1.webp and so on). 
@@ -79,7 +79,7 @@ Using this, let’s play around with some values.
 Reducing the `blurStrength` to 0 confirms our theory that we’re only using the image as the source. The term that’s used in the code here is the `colorSource`. Reducing the `blurStrength` to 0 shows that the image is purely the colour source of the glow effect. 
 
 <div class="video-container">
-  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/no-blur.webm">No Blur</video>
+  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/no-blur.mp4">No Blur</video>
 </div>
 
 ### colorSourceHeightMultiplier, colorSourceWidthMultiplier & colorSourceSizeMultiplier
@@ -87,7 +87,7 @@ Reducing the `blurStrength` to 0 confirms our theory that we’re only using the
 Changing these values changes the size of the colour source image. 
 
 <div class="video-container">
-  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/no-blur-right-sized.webm">No Blur Correct Size</video>
+  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/no-blur-right-sized.mp4">No Blur Correct Size</video>
 </div>
 
 From the code, the `colorSourceSizeMultiplier` is used a fallback value in case the `width` and `height` value is not available. My guess is that different size might not have the width and height multiplier, as it seems that it’s being used when its a square.
@@ -118,7 +118,7 @@ This is the smallest amount of time before an image starts to crossfade to a new
 This changes the time it takes to crossfade between the two images in ms. In the video below, I’ve changed this to 50 ms which makes it change almost instantly:
 
 <div class="video-container">
-  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/crossfade-duration-parameter.webm">No Blur Correct Size</video>
+  <video controls src="https://pub-74aa7bd3a2ce4f8ebee49258a4aabfa6.r2.dev/crossfade-duration-parameter.mp4">No Blur Correct Size</video>
 </div>
 
 This makes it very obvious that the image is changed earlier before the sampled frame appears to allow the glow effect to transition from the old image to the new image smoothly.
