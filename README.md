@@ -4,7 +4,7 @@ Repo for the website at https://adamrashid.dev
 ## Getting Started
 
 ```bash
-# install dependencieiidisandisandianss
+# install dependencies
 $ npm install
 
 # run in static site mode in dev
