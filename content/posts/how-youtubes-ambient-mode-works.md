@@ -1,5 +1,6 @@
 ---
-title: How Youtube's Ambient Mode Works
+title: "How Youtube's Ambient Mode Workz"
+date: "2023-01-07T13:19:53.172Z"
 ---
 
 Youtube has recently rolled out a new feature called Ambient Mode which adds a glow effect around the video you’re currently watching similar to a [TV backlight sync box](https://www.youtube.com/watch?v=PB5h8XAgBew). It’s currently only available for dark mode users. We'll be looking at how this feature works.

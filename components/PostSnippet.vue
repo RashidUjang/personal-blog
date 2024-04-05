@@ -15,10 +15,10 @@
 import { DateTime } from "luxon";
 
 export default {
-  props: ["title", "excerpt", "createdAt", "path"],
+  props: ["title", "excerpt", "date", "path"],
   data() {
     return {
-      formattedDate: DateTime.fromISO(this.createdAt).toFormat("d LLLL y"),
+      formattedDate: DateTime.fromISO(this.date).toFormat("d LLLL y"),
     };
   },
 };
