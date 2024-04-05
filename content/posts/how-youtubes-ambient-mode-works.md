@@ -1,5 +1,5 @@
 ---
-title: "How Youtube's Ambient Mode Workz"
+title: "How Youtube's Ambient Mode Work"
 date: "2023-01-07T13:19:53.172Z"
 ---
 
