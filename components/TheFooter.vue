@@ -1,9 +1,19 @@
 <template>
   <div>
     <hr />
-    <p>Copyright © 2023 | Che Adam Rashid</p>
+    <p>Copyright © {{currentYear}} | Che Adam Rashid</p>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      currentYear: new Date().getFullYear()
+    };
+  }
+};
+</script>
 
 <style scoped>
 hr {
