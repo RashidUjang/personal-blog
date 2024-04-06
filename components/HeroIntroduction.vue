@@ -1,7 +1,7 @@
 <template>
   <div class="parent">
     <div class="picture-socials">
-      <figure class="image is-256x256">
+      <figure class="image">
         <img
           class="is-rounded"
           src="~static/adamrashid.png"
